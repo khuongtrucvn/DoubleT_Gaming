@@ -1,9 +1,7 @@
 var express = require('express');
 var router = express.Router();
+var trangchuController = require('../controllers/trangchuController');
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('trang-chu.js', { title: 'Express' });
-});
+router.get('/', trangchuController.home);
 
 module.exports = router;

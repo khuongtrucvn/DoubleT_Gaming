@@ -136,7 +136,49 @@
 		<!-- / header bottom  -->
 	</header>
 	<!-- / header section -->
-	
+
+    <!-- menu -->
+    <section id="menu">
+        <div class="container">
+            <div class="menu-area">
+                <!-- Navbar -->
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <!-- Left nav -->
+                        <ul class="nav navbar-nav">
+                            <li><a href="/">TRANG CHỦ</a></li>
+                            <li><a href="#">TIN TỨC</a></li>
+                            <li><a href="/game/list">GAME <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    {{#if categories}}
+                                        {{#each categories}}
+                                            <li><a href="#">{{this.name}}</a></li>
+                                        {{/each}}
+                                    {{/if}}
+                                </ul>
+                            </li>
+                            <li><a href="#">THÔNG TIN<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Chính sách bảo mật</a></li>
+                                    <li><a href="#">Điều khoản dịch vụ</a></li>
+                                    <li><a href="#">Liên hệ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / menu -->
   
     {{{body}}}
 	

@@ -1,5 +1,5 @@
 var Sequelize = require('sequelize');
-var db = require('../common/mysql');
+var db = require('../dbs/mysql');
 
 var Product = db.sequelize.define('product',{
     pid:{
