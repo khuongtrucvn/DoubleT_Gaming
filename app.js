@@ -16,6 +16,17 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+const trangchuRouter = require('./routes/trang-chu');
+//const sanphamRouter = require('./routes/san-pham');
+//const theloaiRouter = require('./routes/the-loai');
+//const donhangRouter = require('./routes/don-hang');
+//const nguoidungRouter = require('./routes/nguoi-dung');
+
+app.use('/', trangchuRouter);
+//app.use('/san-pham', sanphamRouter);
+//app.use('/the-loai', theloaiRouter);
+//app.use('/don-hang',donhangRouter);
+//app.use('/nguoi-dung',nguoidungRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
