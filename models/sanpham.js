@@ -50,8 +50,8 @@ var Product = db.sequelize.define('product',{
         allowNull: false
     },
 
-    publisher:{
-        type:Sequelize.STRING(30),
+    pbid:{
+        type:Sequelize.INTEGER,
         allowNull: true
     },
 

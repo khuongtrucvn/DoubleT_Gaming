@@ -1,9 +1,7 @@
 var express = require('express');
 var router = express.Router();
+var sanphamController = require('../controllers/sanphamController');
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('trang-chu.js', { title: 'Express' });
-});
+router.get('/', sanphamController.danhsach);
 
 module.exports = router;
