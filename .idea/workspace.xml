@@ -16,43 +16,54 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/san-pham/danh-sach.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="102" column="56" selection-start-line="102" selection-start-column="56" selection-end-line="102" selection-end-column="56" />
+            <state relative-caret-position="120">
+              <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="34" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/layout.hbs">
+        <entry file="file://$PROJECT_DIR$/views/san-pham/chi-tiet.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="124" column="53" lean-forward="true" selection-start-line="124" selection-start-column="53" selection-end-line="124" selection-end-column="53" />
+            <state relative-caret-position="217">
+              <caret line="133" column="97" lean-forward="true" selection-start-line="133" selection-start-column="22" selection-end-line="133" selection-end-column="97" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/san-pham.js">
+        <entry file="file://$PROJECT_DIR$/views/trang-chu/trang-chu.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+            <state relative-caret-position="582">
+              <caret line="113" column="26" selection-start-line="113" selection-start-column="26" selection-end-line="113" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/sanphamController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="97" column="24" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/the-loai/danh-sach.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controllers/sanphamController.js">
+        <entry file="file://$PROJECT_DIR$/views/nha-phat-hanh/danh-sach.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="66" column="48" lean-forward="true" selection-start-line="66" selection-start-column="48" selection-end-line="66" selection-end-column="48" />
+            <state relative-caret-position="207">
+              <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/san-pham/tim-kiem.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-646" />
           </provider>
         </entry>
       </file>
@@ -68,8 +79,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>6</find>
-      <find>params</find>
       <find>body</find>
+      <find>button</find>
+      <find>params</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -93,20 +105,22 @@
         <option value="$PROJECT_DIR$/routes/nha-phat-hanh.js" />
         <option value="$PROJECT_DIR$/routes/the-loai.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/views/the-loai/danh-sach.hbs" />
-        <option value="$PROJECT_DIR$/views/nha-phat-hanh/danh-sach.hbs" />
-        <option value="$PROJECT_DIR$/views/san-pham/danh-sach.hbs" />
         <option value="$PROJECT_DIR$/views/san-pham/chi-tiet.hbs" />
         <option value="$PROJECT_DIR$/models/binhluan.js" />
-        <option value="$PROJECT_DIR$/routes/san-pham.js" />
         <option value="$PROJECT_DIR$/controllers/theloaiController.js" />
         <option value="$PROJECT_DIR$/controllers/nhaphathanhController.js" />
         <option value="$PROJECT_DIR$/views/layout.hbs" />
+        <option value="$PROJECT_DIR$/routes/san-pham.js" />
+        <option value="$PROJECT_DIR$/views/san-pham/danh-sach.hbs" />
         <option value="$PROJECT_DIR$/controllers/sanphamController.js" />
+        <option value="$PROJECT_DIR$/views/san-pham/sap-xep.hbs" />
+        <option value="$PROJECT_DIR$/views/san-pham/tim-kiem.hbs" />
+        <option value="$PROJECT_DIR$/views/the-loai/danh-sach.hbs" />
+        <option value="$PROJECT_DIR$/views/nha-phat-hanh/danh-sach.hbs" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="27" />
     <option name="y" value="21" />
     <option name="width" value="1346" />
@@ -228,12 +242,12 @@
       <option name="presentableId" value="Default" />
       <updated>1560701710116</updated>
       <workItem from="1560701747543" duration="10964000" />
-      <workItem from="1560726713957" duration="23853000" />
+      <workItem from="1560726713957" duration="32829000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34817000" />
+    <option name="totallyTimeSpent" value="43793000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -352,27 +366,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/nha-phat-hanh/danh-sach.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="102" column="56" selection-start-line="102" selection-start-column="56" selection-end-line="102" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/san-pham/chi-tiet.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="131" column="71" selection-start-line="131" selection-start-column="71" selection-end-line="131" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/the-loai/danh-sach.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="99" column="37" lean-forward="true" selection-start-line="99" selection-start-column="37" selection-end-line="99" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/nhaphathanhController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -394,17 +387,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/trang-chu/trang-chu.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="103" column="117" lean-forward="true" selection-start-line="103" selection-start-column="92" selection-end-line="103" selection-end-column="117" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/san-pham/danh-sach.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="102" column="56" selection-start-line="102" selection-start-column="56" selection-end-line="102" selection-end-column="56" />
+        <state relative-caret-position="120">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="34" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -415,22 +401,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/san-pham/chi-tiet.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="133" column="97" lean-forward="true" selection-start-line="133" selection-start-column="22" selection-end-line="133" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/san-pham.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+        <state relative-caret-position="238">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/trang-chu/trang-chu.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="113" column="26" selection-start-line="113" selection-start-column="26" selection-end-line="113" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/san-pham/tim-kiem.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-646" />
+        <state relative-caret-position="258">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/san-pham/sap-xep.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/sanphamController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="66" column="48" lean-forward="true" selection-start-line="66" selection-start-column="48" selection-end-line="66" selection-end-column="48" />
+        <state relative-caret-position="266">
+          <caret line="97" column="24" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/the-loai/danh-sach.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/nha-phat-hanh/danh-sach.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
         </state>
       </provider>
     </entry>

@@ -8,7 +8,7 @@ const Op = Sequelize.Op;
 exports.danhsach = async (req, res) => {
     const categories = await Category.findAll({raw:true});
     const publishers = await Publisher.findAll({raw:true, limit:10, order:Sequelize.fn( 'RAND' )});
-    const products = await Product.findAll({raw:true,limit:12, order:[[Sequelize.col('pid'),'DESC']]});
+    const products = await Product.findAll({raw:true, order:[[Sequelize.col('pid'),'DESC']]});
 
     res.render('san-pham/danh-sach', { title: 'Danh sách sản phẩm', categories, publishers, products});
 };
@@ -60,6 +60,57 @@ exports.timkiem = async (req, res) => {
             {name:{[Op.like]:'%'+req.params.id+'%'}},
             {developer:{[Op.like]:'%'+req.params.id+'%'}}),
         order:[[Sequelize.col('pid'),'DESC']]});
-    
+
     res.render('san-pham/tim-kiem', {title:'Tìm kiếm', categories, publishers, products});
+
+    /*let limit = 2;
+    const categories = await Category.findAll({raw:true});
+    const publishers = await Publisher.findAll({raw:true, limit:10, order:Sequelize.fn( 'RAND' )});
+    const data = await Product.findAndCountAll({raw:true,
+        where:Sequelize.or(
+            {name:{[Op.like]:'%'+req.params.id+'%'}},
+            {developer:{[Op.like]:'%'+req.params.id+'%'}})});
+    let page = req.params.page || 1;
+    let pages = Math.ceil(data.count / limit);
+    let offset = limit * (page - 1);
+    const products = await Product.findAll({raw:true,
+        where:Sequelize.or(
+            {name:{[Op.like]:'%'+req.params.id+'%'}},
+            {developer:{[Op.like]:'%'+req.params.id+'%'}}),
+        order:[[Sequelize.col('pid'),'DESC']],
+        limit:limit,
+        offset:offset,
+    });
+
+    console.log(data.count);
+    res.render('san-pham/tim-kiem', {title:'Tìm kiếm', categories, publishers, products, current: page, pages: pages});*/
+};
+
+exports.sapxep_post = async (req, res) => {
+    const filterChoice = await req.body.Filter;
+
+    res.redirect('/san-pham/sap-xep/filter='+filterChoice);
+};
+
+exports.sapxep = async (req, res) => {
+    const categories = await Category.findAll({raw:true});
+    const publishers = await Publisher.findAll({raw:true, limit:10, order:Sequelize.fn( 'RAND' )});
+    let products = null;
+    if(req.params.id == 1){
+        products = await Product.findAll({raw:true, order:[[Sequelize.col('pid'),'DESC']]});
+    }
+    else if(req.params.id == 2){
+        products = await Product.findAll({raw:true, order:[[Sequelize.col('price'),'ASC']]});
+    }
+    else if(req.params.id == 3){
+        products = await Product.findAll({raw:true, order:[[Sequelize.col('price'),'DESC']]});
+    }
+    else if(req.params.id == 4){
+        products = await Product.findAll({raw:true, order:[[Sequelize.col('name'),'ASC']]});
+    }
+    else if(req.params.id == 5){
+        products = await Product.findAll({raw:true, order:[[Sequelize.col('name'),'DESC']]});
+    }
+
+    res.render('san-pham/sap-xep', {title:'Tìm kiếm', categories, publishers, products});
 };

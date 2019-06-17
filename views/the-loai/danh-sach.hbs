@@ -24,16 +24,17 @@
           <div class="aa-product-catg-content">
             <div class="aa-product-catg-head">
               <div class="aa-product-catg-head-left">
-                <form action="" class="aa-sort-form">
-                  <label for="">Sắp xếp theo</label>
-                  <select name="">
-                      <option value="1" selected="Mặc định">Default</option>
-                      <option value="2">Thể loại</option>
-                      <option value="3">Giá tiền</option>
-                      <option value="4">Nhà phát triển</option>
-                      <option value="5">Nhà phát hành</option>
-                  </select>
-                </form>
+                  <form action="/san-pham/sap-xep/" method="post" class="aa-sort-form">
+                      <label for="">Sắp xếp theo</label>
+                      <select name="Filter">
+                          <option value="1" selected="Mặc định">Mặc định</option>
+                          <option value="2">Giá tiền tăng dần</option>
+                          <option value="3">Giá tiền giảm dần</option>
+                          <option value="4">Tên tăng dần</option>
+                          <option value="5">Tên giảm dần</option>
+                      </select>
+                      <button type="submit" class="btn btn-default">Sắp xếp</button>
+                  </form>
               </div>
               <div class="aa-product-catg-head-right">
                 <a id="grid-catg" href="#"><span class="fa fa-th"></span></a>
