@@ -40,7 +40,7 @@
                     {{#if carts}}
                         {{#each carts}}
                             <tr>
-                                <td><a class="remove" href="#">Thanh toán</a></td>
+                                <td><a class="remove" href="/don-hang/thanh-toan/{{this.pid}}">Thanh toán</a></td>
                                 <td><a href="#"><img src="{{this.url}}" alt="img"></a></td>
                                 <td><a class="aa-cart-title" href="/san-pham/id={{this.pid}}">{{this.pname}}</a></td>
                                 <td><input class="aa-cart-quantity" type="number" value="{{this.quantity}}"></td>

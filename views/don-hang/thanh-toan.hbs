@@ -1,66 +1,3 @@
-<!-- menu -->
-<section id="menu">
-	<div class="container">
-	<div class="menu-area">
-		<!-- Navbar -->
-		<div class="navbar navbar-default" role="navigation">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			</button>          
-		</div>
-		<div class="navbar-collapse collapse">
-			<!-- Left nav -->
-			<ul class="nav navbar-nav">
-			<li><a href="/">TRANG CHỦ</a></li>
-			<li><a href="#">TIN TỨC</a></li>
-			<li><a href="../san-pham/danh-sach.hbs">GAME <span class="caret"></span></a>
-				<ul class="dropdown-menu">                
-				<li><a href="#">Hành động</a>
-					<ul class="dropdown-menu">
-					<li><a href="#">FPS</a></li>
-					<li><a href="#">TPF</a></li>
-					<li><a href="#">Chặt chém</a></li>                                      
-					</ul>
-				</li>
-				<li><a href="#">Phiêu lưu</a>
-					<ul class="dropdown-menu">
-					<li><a href="#">Thế giới mở</a></li>
-					<li><a href="#">Nhập vai</a></li>
-					<li><a href="#">Sinh tồn</a></li>
-					<li><a href="#">Kinh dị</a></li>
-					<li><a href="#">Steath</a></li>						
-					</ul>
-				</li>
-				<li><a href="#">Chiến thuật</a</li>
-				<li><a href="#">Thể thao</a></li>                                                
-				<li><a href="#">Khác</a>
-					<ul class="dropdown-menu">
-					<li><a href="#">Indie</a></li>
-					<li><a href="#">Mô phỏng-quản lý</a></li>
-					<li><a href="#">Multiplayer</a></li>						
-					</ul>
-				</li>              
-				</ul>
-			</li>              		  
-			<li><a href="#">THÔNG TIN<span class="caret"></span></a>
-				<ul class="dropdown-menu">                
-				<li><a href="#">Chính sách bảo mật</a></li>
-				<li><a href="#">Điều khoản dịch vụ</a></li>  
-				<li><a href="#">Liên hệ</a></li>              
-				</ul>
-			</li>             				
-			</ul>
-		</div><!--/.nav-collapse -->
-		</div>
-	</div>       
-	</div>
-</section>
-<!-- / menu -->
-
 <!-- catg header banner section -->
 <section id="aa-catg-head-banner">
 <div class="header-banner-size">
@@ -70,7 +7,7 @@
 			<h2>Thanh toán</h2>
 			<ol class="breadcrumb">
 				<li><a href="/">Trang chủ</a></li>
-				<li><a href="../gio-hang/danh-sach.hbs">Giỏ hàng</a></li>
+				<li><a href="/gio-hang/{{user.id}}">Giỏ hàng</a></li>
 				<li class="active">Thanh toán</li>
 			</ol>
 			</div>
@@ -130,14 +67,7 @@
                                 <input type="text" placeholder="Tên*">
                               </div>
                             </div>
-                          </div> 
-                          <div class="row">
-                            <div class="col-md-12">
-                              <div class="aa-checkout-single-bill">
-                                <input type="text" placeholder="Tên công ty">
-                              </div>                             
-                            </div>                            
-                          </div>  
+                          </div>
                           <div class="row">
                             <div class="col-md-6">
                               <div class="aa-checkout-single-bill">
@@ -154,32 +84,6 @@
                             <div class="col-md-12">
                               <div class="aa-checkout-single-bill">
                                 <textarea cols="8" rows="3">Địa chỉ*</textarea>
-                              </div>                             
-                            </div>                            
-                          </div>   
-                          <div class="row">
-                            <div class="col-md-12">
-                              <div class="aa-checkout-single-bill">
-                                <select>
-                                  <option value="0">Chọn quốc gia</option>
-                                  <option value="1">Australia</option>
-                                  <option value="2">Afganistan</option>
-                                  <option value="3">Bangladesh</option>
-                                  <option value="4">Belgium</option>
-                                  <option value="5">Brazil</option>
-                                  <option value="6">Canada</option>
-                                  <option value="7">China</option>
-                                  <option value="8">Denmark</option>
-                                  <option value="9">Egypt</option>
-                                  <option value="10">India</option>
-                                  <option value="11">Iran</option>
-                                  <option value="12">Israel</option>
-                                  <option value="13">Mexico</option>
-								  <option value="14">Viet Nam</option>
-                                  <option value="15">UAE</option>
-                                  <option value="16">UK</option>
-                                  <option value="17">USA</option>
-                                </select>
                               </div>                             
                             </div>                            
                           </div>
@@ -200,11 +104,6 @@
                               <div class="aa-checkout-single-bill">
                                 <input type="text" placeholder="Thành phố*">
                               </div>                             
-                            </div>
-                            <div class="col-md-6">
-                              <div class="aa-checkout-single-bill">
-                                <input type="text" placeholder="Mã bưu điện/ ZIP*">
-                              </div>
                             </div>
                           </div> 
                            <div class="row">
