@@ -7,7 +7,7 @@ const Op = Sequelize.Op;
 
 exports.danhsach = async (req, res) => {
     const categories = await Category.findAll({raw:true});
-    const publishers = await Publisher.findAll({raw:true, limit:10});
+    const publishers = await Publisher.findAll({raw:true, limit:10, order:Sequelize.fn( 'RAND' )});
     const products = await Product.findAll({raw:true,limit:12, order:[[Sequelize.col('pid'),'DESC']]});
 
     res.render('san-pham/danh-sach', { title: 'Danh sách sản phẩm', categories, publishers, products});
@@ -44,4 +44,22 @@ exports.binhluan_post = async (req, res) => {
     });
 
     res.redirect('/san-pham/id='+req.params.id);
+};
+
+exports.timkiem_post = async (req, res) => {
+    const searchText = await req.body.Text;
+
+    res.redirect('/san-pham/tim-kiem/key='+searchText);
+};
+
+exports.timkiem = async (req, res) => {
+    const categories = await Category.findAll({raw:true});
+    const publishers = await Publisher.findAll({raw:true, limit:10, order:Sequelize.fn( 'RAND' )});
+    const products = await Product.findAll({raw:true,
+        where:Sequelize.or(
+            {name:{[Op.like]:'%'+req.params.id+'%'}},
+            {developer:{[Op.like]:'%'+req.params.id+'%'}}),
+        order:[[Sequelize.col('pid'),'DESC']]});
+    
+    res.render('san-pham/tim-kiem', {title:'Tìm kiếm', categories, publishers, products});
 };

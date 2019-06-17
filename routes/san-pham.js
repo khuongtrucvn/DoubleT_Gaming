@@ -8,4 +8,8 @@ router.get('/id=:id', sanphamController.chitiet);
 
 router.post('/binh-luan/:id', sanphamController.binhluan_post);
 
+router.post('/tim-kiem', sanphamController.timkiem_post);
+
+router.get('/tim-kiem/key=:id', sanphamController.timkiem);
+
 module.exports = router;
