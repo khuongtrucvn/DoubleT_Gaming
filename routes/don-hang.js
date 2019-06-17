@@ -4,5 +4,4 @@ var donhangController = require('../controllers/donhangController');
 
 router.get('/:id', donhangController.danhsach);
 
-
 module.exports = router;
