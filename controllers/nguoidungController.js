@@ -1,5 +1,6 @@
 const Category = require('../models/theloai');
 const User = require('../models/nguoidung');
+const Sequelize = require('sequelize');
 
 exports.index = async (req, res) => {
     //important data
@@ -50,7 +51,35 @@ exports.doimatkhau_post = async (req, res) => {
         }
     }
     res.redirect('/nguoi-dung/thong-tin');
+};
 
+exports.dangki_post = async (req, res) => {
+    const nameText = await req.body.Name.trim();
+    const usernameText = await req.body.Username.trim();
+    const passwordText = await req.body.Password;
+    const retypeText = await req.body.RetypePassword;
+    const emailText = await req.body.Email.trim();
+
+    const emailDuplicate = await User.findAndCountAll({raw:true, where:{email:emailText}});
+    const usernameDuplicate = await User.findAndCountAll({raw:true, where:{username:usernameText}});
+    if(nameText !== "" && usernameText !== "" && passwordText !== "" && retypeText !== "" && emailText !== ""){
+        if(passwordText === retypeText){
+            if(usernameDuplicate.count === 0){
+                if(emailDuplicate.count === 0){
+                    User.create({
+                        username:usernameText,
+                        password:passwordText,
+                        name:nameText,
+                        email:emailText,
+                    });
+
+                    res.redirect('/');
+                }
+            }
+        }
+    }
+
+    res.redirect('/nguoi-dung/dang-nhap-dang-ki');
 };
 
 

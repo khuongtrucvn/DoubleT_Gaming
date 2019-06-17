@@ -13,8 +13,10 @@ router.post('/dang-nhap',
 
 router.get('/thong-tin',nguoidungController.thongtin);
 
-router.post('/chinh-sua/',nguoidungController.chinhsua_post);
+router.post('/chinh-sua',nguoidungController.chinhsua_post);
 
-router.post('/doi-mat-khau/',nguoidungController.doimatkhau_post);
+router.post('/doi-mat-khau',nguoidungController.doimatkhau_post);
+
+router.post('/dang-ki',nguoidungController.dangki_post);
 
 module.exports = router;
