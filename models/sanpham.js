@@ -1,5 +1,7 @@
 var Sequelize = require('sequelize');
 var db = require('../dbs/mysql');
+const Category = require('../models/theloai');
+const Publisher = require('../models/nhaphathanh');
 
 var Product = db.sequelize.define('product',{
     pid:{
@@ -17,6 +19,11 @@ var Product = db.sequelize.define('product',{
 
     cid:{
         type:Sequelize.INTEGER,
+        references: {
+            model: Category,
+            key: 'id',
+
+        },
         allowNull: false
     },
 
@@ -52,6 +59,10 @@ var Product = db.sequelize.define('product',{
 
     pbid:{
         type:Sequelize.INTEGER,
+        references: {
+            model: Publisher,
+            key: 'pbid',
+        },
         allowNull: true
     },
 
@@ -64,6 +75,22 @@ var Product = db.sequelize.define('product',{
         type:Sequelize.STRING(255),
         allowNull: true
     },
-})
+});
+
+Product.hasOne(Category,{
+    onDelete: 'cascade',
+    foreignKey: {
+        field: 'id', allowNull: false,
+    },
+    sourceKey: 'cid',
+});
+
+Product.hasOne(Publisher,{
+    onDelete: 'cascade',
+    foreignKey: {
+        field: 'pbid', allowNull: true,
+    },
+    sourceKey: 'pbid',
+});
 
 module.exports = Product;
