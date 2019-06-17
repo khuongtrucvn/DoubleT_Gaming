@@ -1,0 +1,62 @@
+<!-- catg header banner section -->
+<section id="aa-catg-head-banner">
+    <div class="header-banner-size">
+        <div class="aa-catg-head-banner-area">
+            <div class="container">
+                <div class="aa-catg-head-banner-content">
+                    <h2>Thông tin cá nhân</h2>
+                    <ol class="breadcrumb">
+                        <li><a href="/">Trang chủ</a></li>
+                        <li class="active">Tài khoản</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / catg header banner section -->
+
+<!-- Cart view section -->
+<section id="aa-myaccount">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="aa-myaccount-area">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="aa-myaccount-register">
+                                <h4>Thông tin</h4>
+                                <form action="/nguoi-dung/chinh-sua" method="post" class="aa-login-form">
+                                    <label for="">Họ tên<span>*</span></label>
+                                    <input type="text" placeholder="Họ tên" name="Name" value="{{user.name}}"/>
+                                    <label for="">Email<span>*</span></label>
+                                    <input type="email" placeholder="Email" value="{{user.email}}" disabled/>
+                                    <label for="">Số điện thoại<span>*</span></label>
+                                    <input type="text" placeholder="Số điện thoại" name="PhoneNumber" value="{{user.phonenumber}}"/>
+                                    <label for="">Địa chỉ<span>*</span></label>
+                                    <input type="text" placeholder="Địa chỉ" name="Address" value="{{user.address}}"/>
+                                    <button type="submit" class="aa-browse-btn">Lưu thông tin</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="aa-myaccount-register">
+                                <h4>Đổi mật khẩu</h4>
+                                <form action="" class="aa-login-form">
+                                    <label for="">Nhập mật khẩu cũ<span>*</span></label>
+                                    <input type="password" placeholder="Mật khẩu cũ">
+                                    <label for="">Nhập mật khẩu mới<span>*</span></label>
+                                    <input type="password" placeholder="Mật khẩu mới">
+                                    <label for="">Nhập lại mật khẩu mới<span>*</span></label>
+                                    <input type="password" placeholder=" Nhập lại mật khẩu mới">
+                                    <button type="submit" class="aa-browse-btn">Đổi mật khẩu</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / Cart view section -->

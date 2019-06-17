@@ -11,4 +11,8 @@ router.post('/dang-nhap',
       failureRedirect: '/nguoi-dung/dang-nhap-dang-ki/'})
 );
 
+router.get('/thong-tin',nguoidungController.thongtin);
+
+router.post('/chinh-sua/',nguoidungController.chinhsua_post);
+
 module.exports = router;
