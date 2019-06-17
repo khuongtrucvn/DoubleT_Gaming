@@ -46,6 +46,7 @@ exports.binhluan_post = async (req, res) => {
     const time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     const datecomment = date+' '+time;
 
+    console.log(name);
     Comment.create({
         pid:req.params.id,
         name:name,

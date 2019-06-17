@@ -40,10 +40,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/gio-hang/danh-sach.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
+            <state relative-caret-position="317">
               <caret line="49" column="33" lean-forward="true" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
             </state>
           </provider>
@@ -54,6 +54,24 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="181">
               <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/san-pham/chi-tiet.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="132" column="132" selection-start-line="132" selection-start-column="132" selection-end-line="132" selection-end-column="132" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/sanphamController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
@@ -94,7 +112,6 @@
         <option value="$PROJECT_DIR$/models/sanpham.js" />
         <option value="$PROJECT_DIR$/routes/nha-phat-hanh.js" />
         <option value="$PROJECT_DIR$/routes/the-loai.js" />
-        <option value="$PROJECT_DIR$/views/san-pham/chi-tiet.hbs" />
         <option value="$PROJECT_DIR$/models/binhluan.js" />
         <option value="$PROJECT_DIR$/routes/san-pham.js" />
         <option value="$PROJECT_DIR$/views/san-pham/danh-sach.hbs" />
@@ -111,7 +128,6 @@
         <option value="$PROJECT_DIR$/views/nguoi-dung/quen-mat-khau.hbs" />
         <option value="$PROJECT_DIR$/controllers/nhaphathanhController.js" />
         <option value="$PROJECT_DIR$/controllers/trangchuController.js" />
-        <option value="$PROJECT_DIR$/controllers/sanphamController.js" />
         <option value="$PROJECT_DIR$/controllers/theloaiController.js" />
         <option value="$PROJECT_DIR$/controllers/nguoidungController.js" />
         <option value="$PROJECT_DIR$/models/donhang.js" />
@@ -124,6 +140,8 @@
         <option value="$PROJECT_DIR$/controllers/giohangController.js" />
         <option value="$PROJECT_DIR$/models/giohang.js" />
         <option value="$PROJECT_DIR$/views/gio-hang/danh-sach.hbs" />
+        <option value="$PROJECT_DIR$/controllers/sanphamController.js" />
+        <option value="$PROJECT_DIR$/views/san-pham/chi-tiet.hbs" />
       </list>
     </option>
   </component>
@@ -165,18 +183,6 @@
               <item name="DoubleT_Gaming" type="b2602c69:ProjectViewProjectNode" />
               <item name="DoubleT_Gaming" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DoubleT_Gaming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DoubleT_Gaming" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="don-hang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DoubleT_Gaming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DoubleT_Gaming" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="gio-hang" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DoubleT_Gaming" type="b2602c69:ProjectViewProjectNode" />
@@ -242,12 +248,12 @@
       <updated>1560701710116</updated>
       <workItem from="1560701747543" duration="10964000" />
       <workItem from="1560726713957" duration="45064000" />
-      <workItem from="1560783820812" duration="23003000" />
+      <workItem from="1560783820812" duration="23919000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79031000" />
+    <option name="totallyTimeSpent" value="79947000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -403,13 +409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/san-pham/chi-tiet.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="133" column="97" selection-start-line="133" selection-start-column="22" selection-end-line="133" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/the-loai.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -487,13 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/sanphamController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/donhang.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -522,6 +514,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/don-hang/danh-sach.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/giohang.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/sanphamController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/layout.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-244">
@@ -536,24 +549,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/giohang.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/don-hang/danh-sach.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/gio-hang/danh-sach.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
+        <state relative-caret-position="317">
           <caret line="49" column="33" lean-forward="true" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/san-pham/chi-tiet.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="132" column="132" selection-start-line="132" selection-start-column="132" selection-end-line="132" selection-end-column="132" />
         </state>
       </provider>
     </entry>
