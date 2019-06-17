@@ -4,7 +4,10 @@ const Publisher = require('../models/nhaphathanh');
 const Sequelize = require('sequelize');
 
 exports.index = async (req, res) => {
+    //important data
     const categories = await Category.findAll({raw:true});
-    res.render('nguoi-dung/dang-nhap-dang-ki', {title: 'Đăng nhập - Đăng kí', categories});
+    const logined = req.isAuthenticated();
+
+    res.render('nguoi-dung/dang-nhap-dang-ki', {title: 'Đăng nhập - Đăng kí', categories, logined});
 };
 

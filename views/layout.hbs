@@ -51,12 +51,15 @@
 				<div class="aa-header-top-area">
 				<div class="aa-header-top-right">
 					<ul class="aa-head-top-nav-right">
-					    <li><a href="tai-khoan.hbs">TÀI KHOẢN</a></li>
-					    <li class="hidden-xs"><a href="wishlist.hbs">WISHLIST</a></li>
-					    <li class="hidden-xs"><a href="gio-hang.hbs">GIỎ HÀNG</a></li>
-					    <li class="hidden-xs"><a href="thanh-toan.hbs">THANH TOÁN</a></li>
-					    <li><a href="/nguoi-dung/dang-nhap-dang-ki" >ĐĂNG NHẬP</a></li>
-                        <li><a href="#" >ĐĂNG XUẤT</a></li>
+                        {{#if logined}}
+                            <li><a href="tai-khoan.hbs">TÀI KHOẢN</a></li>
+                            <li class="hidden-xs"><a href="wishlist.hbs">WISHLIST</a></li>
+                            <li class="hidden-xs"><a href="gio-hang.hbs">GIỎ HÀNG</a></li>
+                            <li class="hidden-xs"><a href="thanh-toan.hbs">THANH TOÁN</a></li>
+                            <li><a href="/dang-xuat" >ĐĂNG XUẤT</a></li>
+                        {{else}}
+                            <li><a href="/nguoi-dung/dang-nhap-dang-ki" >ĐĂNG NHẬP</a></li>
+                        {{/if}}
 					</ul>
 				</div>
 				</div>
