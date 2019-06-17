@@ -12,6 +12,7 @@ var User = db.sequelize.define('user_account',{
 
     username:{
         type:Sequelize.STRING(50),
+        unique: true,
         allowNull: false
     },
 
@@ -37,12 +38,12 @@ var User = db.sequelize.define('user_account',{
 
     phonenumber:{
         type:Sequelize.STRING(50),
-        allowNull: false
+        allowNull: true
     },
 
     address:{
         type:Sequelize.STRING(255),
-        allowNull: false
+        allowNull: true
     },
 })
 

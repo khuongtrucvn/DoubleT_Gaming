@@ -48,6 +48,14 @@ var Order = db.sequelize.define('product_order',{
         type:Sequelize.STRING(255),
         allowNull: true
     },
+
+    dateorder:{
+        type:Sequelize.DATE,
+    },
+
+    datedeliver:{
+        type:Sequelize.DATE,
+    },
 })
 
 module.exports = Order;
