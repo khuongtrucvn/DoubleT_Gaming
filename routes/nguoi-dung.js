@@ -19,4 +19,8 @@ router.post('/doi-mat-khau',nguoidungController.doimatkhau_post);
 
 router.post('/dang-ki',nguoidungController.dangki_post);
 
+router.get('/quen-mat-khau',nguoidungController.quenmatkhau);
+
+router.post('/quen-mat-khau',nguoidungController.quenmatkhau_post);
+
 module.exports = router;
