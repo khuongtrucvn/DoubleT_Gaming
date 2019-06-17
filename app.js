@@ -56,14 +56,14 @@ const trangchuRouter = require('./routes/trang-chu');
 const sanphamRouter = require('./routes/san-pham');
 const theloaiRouter = require('./routes/the-loai');
 const nhaphathanhRouter = require('./routes/nha-phat-hanh');
-//const donhangRouter = require('./routes/don-hang');
+const donhangRouter = require('./routes/don-hang');
 const nguoidungRouter = require('./routes/nguoi-dung');
 
 app.use('/', trangchuRouter);
 app.use('/san-pham', sanphamRouter);
 app.use('/the-loai', theloaiRouter);
 app.use('/nha-phat-hanh',nhaphathanhRouter);
-//app.use('/don-hang',donhangRouter);
+app.use('/don-hang',donhangRouter);
 app.use('/nguoi-dung',nguoidungRouter);
 
 // catch 404 and forward to error handler

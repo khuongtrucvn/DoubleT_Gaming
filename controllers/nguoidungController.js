@@ -6,16 +6,15 @@ exports.index = async (req, res) => {
     //important data
     const categories = await Category.findAll({raw:true});
     const logined = req.isAuthenticated();
+    const user = req.user;
 
-    res.render('nguoi-dung/dang-nhap-dang-ki', {title: 'Đăng nhập - Đăng kí', categories, logined});
+    res.render('nguoi-dung/dang-nhap-dang-ki', {title: 'Đăng nhập - Đăng kí', categories, logined, user});
 };
 
 exports.thongtin = async (req, res) => {
     //important data
     const categories = await Category.findAll({raw:true});
     const logined = req.isAuthenticated();
-
-    //usual data
     const user = req.user;
 
     res.render('nguoi-dung/chi-tiet', {title: 'Thông tin cá nhân', categories, logined, user});
@@ -85,8 +84,9 @@ exports.quenmatkhau = async (req, res) => {
     //important data
     const categories = await Category.findAll({raw:true});
     const logined = req.isAuthenticated();
+    const user = req.user;
 
-    res.render('nguoi-dung/quen-mat-khau', {title: 'Quên mật khẩu', categories, logined, });
+    res.render('nguoi-dung/quen-mat-khau', {title: 'Quên mật khẩu', categories, logined, user});
 }
 
 exports.quenmatkhau_post = async (req, res) => {
@@ -127,7 +127,7 @@ exports.quenmatkhau_post = async (req, res) => {
             res.redirect('/nguoi-dung/dang-nhap-dang-ki');
         }
     }
-    
+
     res.redirect('/nguoi-dung/quen-mat-khau');
 };
 

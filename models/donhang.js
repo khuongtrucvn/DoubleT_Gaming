@@ -1,5 +1,6 @@
 var Sequelize = require('sequelize');
 var db = require('../dbs/mysql');
+const Product = require('../models/sanpham');
 
 var Order = db.sequelize.define('product_order',{
     oid:{
@@ -11,6 +12,11 @@ var Order = db.sequelize.define('product_order',{
     },
 
     pid:{
+        type:Sequelize.INTEGER,
+        allowNull: false
+    },
+
+    uid:{
         type:Sequelize.INTEGER,
         allowNull: false
     },
@@ -34,11 +40,6 @@ var Order = db.sequelize.define('product_order',{
         allowNull: false
     },
 
-    email:{
-        type:Sequelize.STRING(50),
-        allowNull: false
-    },
-
     address:{
         type:Sequelize.STRING(255),
         allowNull: false
@@ -56,6 +57,14 @@ var Order = db.sequelize.define('product_order',{
     datedeliver:{
         type:Sequelize.DATE,
     },
-})
+});
+
+Order.hasOne(Product,{
+    onDelete: 'cascade',
+    foreignKey: {
+        field: 'pid', allowNull: false,
+    },
+    sourceKey: 'pid',
+});
 
 module.exports = Order;

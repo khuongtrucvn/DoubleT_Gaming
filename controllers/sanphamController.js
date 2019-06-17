@@ -9,18 +9,20 @@ exports.danhsach = async (req, res) => {
     //important data
     const categories = await Category.findAll({raw:true});
     const logined = req.isAuthenticated();
+    const user = req.user;
 
     //usual data
     const publishers = await Publisher.findAll({raw:true, limit:10, order:Sequelize.fn( 'RAND' )});
     const products = await Product.findAll({raw:true, order:[[Sequelize.col('pid'),'DESC']]});
 
-    res.render('san-pham/danh-sach', { title: 'Danh sách sản phẩm', categories,logined, publishers, products});
+    res.render('san-pham/danh-sach', { title: 'Danh sách sản phẩm', categories,logined,user, publishers, products});
 };
 
 exports.chitiet = async (req, res) => {
     //important data
     const categories = await Category.findAll({raw:true});
     const logined = req.isAuthenticated();
+    const user = req.user;
 
     //usual data
     const product = await Product.findByPk(req.params.id,{raw:true,
@@ -32,7 +34,7 @@ exports.chitiet = async (req, res) => {
     const comments = await Comment.findAndCountAll({raw:true, where:{pid:product.pid}, order:[[Sequelize.col('datecomment'),'DESC']]});
     const related = await Product.findAll({raw:true, where:Sequelize.and({cid:product.cid},{pid:{[Op.ne]:req.params.id}}), limit:8, order:Sequelize.fn( 'RAND' )});
 
-    res.render('san-pham/chi-tiet', {title: product.name, categories,logined, product, comments, related});
+    res.render('san-pham/chi-tiet', {title: product.name, categories,logined,user, product, comments, related});
 };
 
 exports.binhluan_post = async (req, res) => {
@@ -64,6 +66,7 @@ exports.timkiem = async (req, res) => {
     //important data
     const categories = await Category.findAll({raw:true});
     const logined = req.isAuthenticated();
+    const user = req.user;
 
     //usual data
     const publishers = await Publisher.findAll({raw:true, limit:10, order:Sequelize.fn( 'RAND' )});
@@ -73,7 +76,7 @@ exports.timkiem = async (req, res) => {
             {developer:{[Op.like]:'%'+req.params.id+'%'}}),
         order:[[Sequelize.col('pid'),'DESC']]});
 
-    res.render('san-pham/tim-kiem', {title:'Tìm kiếm', categories,logined, publishers, products});
+    res.render('san-pham/tim-kiem', {title:'Tìm kiếm', categories,logined,user, publishers, products});
 
     /*let limit = 2;
     const categories = await Category.findAll({raw:true});
@@ -108,6 +111,7 @@ exports.sapxep = async (req, res) => {
     //important data
     const categories = await Category.findAll({raw:true});
     const logined = req.isAuthenticated();
+    const user = req.user;
 
     //usual data
     const publishers = await Publisher.findAll({raw:true, limit:10, order:Sequelize.fn( 'RAND' )});
@@ -128,5 +132,5 @@ exports.sapxep = async (req, res) => {
         products = await Product.findAll({raw:true, order:[[Sequelize.col('name'),'DESC']]});
     }
 
-    res.render('san-pham/sap-xep', {title:'Tìm kiếm', categories,logined, publishers, products});
+    res.render('san-pham/sap-xep', {title:'Tìm kiếm', categories,logined,user, publishers, products});
 };
