@@ -57,9 +57,9 @@
                     <div class="aa-prod-quantity">                   
 					  <h4 class="aa-prod-category">Nhà phát triển: <a href="#">{{product.developer}}</a>
                       </h4></br>
-					  <h4 class="aa-prod-category">Nhà phát hành: <a href="#">{{product.pbname}}</a>
+					  <h4 class="aa-prod-category">Nhà phát hành: <a href="/nha-phat-hanh/pbid={{product.pbid}}">{{product.pbname}}</a>
                       </h4></br>
-                      <h4 class="aa-prod-category">Thể loại: <a href="#">{{product.cname}}</a>
+                      <h4 class="aa-prod-category">Thể loại: <a href="/the-loai/cid={{product.cid}}">{{product.cname}}</a>
                       </h4></br>
 					  <h4 class="aa-prod-category">Số lượng:
 					  </h4>
@@ -96,10 +96,7 @@
               <!-- Tab panes -->
               <div class="tab-content">
                 <div class="tab-pane fade in active" id="description">
-                  <p>With over 50 awards and nominations, Sekiro: Shadows Die Twice is the next adventure from developer FromSoftware, creators of Bloodborne and the Dark Souls series. Carve your own clever path to vengeance in this all-new action-adventure title.</p>
-                  <p>In Sekiro: Shadows Die Twice you are the "one-armed wolf", a disgraced and disfigured warrior rescued from the brink of death. Bound to protect a young lord who is the descendant of an ancient bloodline, you become the target of many vicious enemies, including the dangerous Ashina clan. When the young lord is captured, nothing will stop you on a perilous quest to regain your honor, not even death itself.</p>
-                  <p>Explore late 1500s Sengoku Japan, a brutal period of constant life and death conflict, as you come face to face with larger than life foes in a dark and twisted world. Unleash an arsenal of deadly prosthetic tools and powerful ninja abilities while you blend stealth, vertical traversal, and visceral head to head combat in a bloody confrontation.</p>
-				  <p>Take Revenge. Restore your honor. Kill Ingeniously.</p>
+                  <p>{{product.description}}</p>
                 </div>
                 <div class="tab-pane fade " id="review">
                  <div class="aa-product-review-area">
@@ -164,11 +161,7 @@
                       </div>
                       <div class="form-group">
                         <label for="name">Tên</label>
-                        <input type="text" class="form-control" id="name" placeholder="Email">
-                      </div>  
-                      <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+                        <input type="text" class="form-control" id="name" placeholder="Họ tên">
                       </div>
                       <button type="submit" class="btn btn-default aa-review-submit">Gửi</button>
                    </form>

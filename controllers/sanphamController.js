@@ -7,7 +7,7 @@ const Op = Sequelize.Op;
 exports.danhsach = async (req, res) => {
     const categories = await Category.findAll({raw:true});
     const publishers = await Publisher.findAll({raw:true, limit:10});
-    const products = await Product.findAll({raw:true,limit:12 ,order:Sequelize.fn('RAND')});
+    const products = await Product.findAll({raw:true,limit:12, order:[[Sequelize.col('pid'),'DESC']]});
 
     res.render('san-pham/danh-sach', { title: 'Danh sách sản phẩm', categories, publishers, products});
 };

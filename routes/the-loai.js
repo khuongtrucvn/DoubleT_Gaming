@@ -1,9 +1,7 @@
 var express = require('express');
 var router = express.Router();
+var theloaiController = require('../controllers/theloaiController');
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('trang-chu.js', { title: 'Express' });
-});
+router.get('/cid=:id', theloaiController.phanloai_sanpham);
 
 module.exports = router;
