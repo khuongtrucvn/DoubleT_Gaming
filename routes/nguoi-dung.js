@@ -15,4 +15,6 @@ router.get('/thong-tin',nguoidungController.thongtin);
 
 router.post('/chinh-sua/',nguoidungController.chinhsua_post);
 
+router.post('/doi-mat-khau/',nguoidungController.doimatkhau_post);
+
 module.exports = router;

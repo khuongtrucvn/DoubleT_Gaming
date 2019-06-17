@@ -32,7 +32,25 @@ exports.chinhsua_post = async (req, res) => {
         phonenumber:phoneText,
         address:addressText,
     });
-    res.redirect('/nguoi-dung/thong-tin')
+    res.redirect('/nguoi-dung/thong-tin');
+};
+
+exports.doimatkhau_post = async (req, res) => {
+    const oldPass = await req.body.OldPass;
+    const newPass = await req.body.NewPass;
+    const retypePass = await req.body.RetypePass;
+
+    const user = req.user;
+    if(user.password === oldPass){
+        if(newPass === retypePass){
+            user.update({
+                password:newPass,
+            });
+            res.redirect('/');
+        }
+    }
+    res.redirect('/nguoi-dung/thong-tin');
+
 };
 
 
